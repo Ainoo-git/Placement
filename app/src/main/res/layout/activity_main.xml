@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F2BBD8"
     tools:context=".MainActivity">
 
     <ImageView
@@ -27,11 +28,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
+
     <EditText
         android:id="@+id/editName"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:hint="Enter name"
+        android:hint="Name"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@id/textHello"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +62,8 @@
         app:layout_constraintStart_toStartOf="@id/editPassword"
         app:layout_constraintEnd_toStartOf="@id/buttonSignup"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#665353"/>
 
     <Button
         android:id="@+id/buttonSignup"
@@ -74,12 +77,12 @@
         app:layout_constraintEnd_toEndOf="@id/editPassword"
         android:layout_marginTop="24dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintHorizontal_chainStyle="packed"/>
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#B0B0B0"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
