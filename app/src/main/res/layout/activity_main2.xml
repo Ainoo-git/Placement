@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity2"
+    android:background="#D7C6F6"
+    >
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="30dp"
+        android:background="@color/blanco_puro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchRecordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Añadir recordatorio"
+        android:textColor="@color/morado_oscuro"
+        android:textSize="16sp"
+        app:cardCornerRadius="30dp"
+        android:background="#C195EB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"
+        app:thumbTint="@color/blanco_puro"
+        app:trackTint="@color/menta_suave"/>
+
+    <Switch
+        android:id="@+id/switchDiaCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#C195EB"
+        android:text="Evento de día completo"
+        android:textColor="@color/morado_oscuro"
+        android:textSize="16sp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchRecordatorio"
+        app:trackTint="@color/menta_suave"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabConfirmar"
+        android:layout_width="wrap_content"
+        android:src="@drawable/baseline_add_circle_outline_24"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Confirmar evento"
+        app:backgroundTint="@color/morado_oscuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/blanco_puro"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
